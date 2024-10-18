@@ -1,0 +1,129 @@
+/* Importación de la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 1440px;
+  height: 970px;
+  padding: 10px 0px;
+  background-color: #282C34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* contenedor principal */
+
+
+
+.continer__form{
+width: 656px;
+height: 425px;
+border-radius: 8px;
+background-color: #ffffff;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+padding: 16px;
+box-shadow: 4px 4px 4px 4px #00000040;
+}
+/* stylos a la imagen de gema */
+.logo__principal{
+  width: 309px;
+  height: 213px;
+  grid-column: 1/2;
+  grid-row: 1 / 2;
+  position: relative;
+  top:94px;
+  right: 45px;
+}
+
+/* stylos a los texto y los input */
+
+.input-container{
+width:315px ;
+height: 393px;
+padding: 16px;
+border: 1px solid #000;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+/* texto principal */
+
+.texto__principal{
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #282C34;
+  text-align: center;
+
+}
+
+/* input */
+.input__logo {
+  width: 283px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #282C34;
+  padding: 8px;
+}
+
+.usuario {
+  position: relative;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out; /* Añade una transición */
+  top: 30px;
+  left: 45px;
+  color: #282C3440;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+/* Cuando el input está enfocado, el texto "usuario" sube */
+.input__logo:focus ,.usuario{
+  transform: translateY(30px); /* Mueve el texto hacia arriba */
+  top: 0; /* Ajusta `top` si es necesario */
+  color: aqua; /* Cambia el color (opcional) */
+}
+
+.logo__usuario{
+
+  position: relative;
+  left: 45px;
+  bottom: 27px;
+}
+
+  /* Estilos del botón de ingresar */
+  .btn__ingresar {
+    width: 104px;
+    height: 33px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none !important;
+    background: #1A65A4;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16.94px;
+    text-align: center; 
+    color: #FFFFFF;
+    position: relative;
+    bottom: 45px;
+    left: 85px;
+  }
+
+
+
+
+

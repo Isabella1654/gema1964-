@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: none;
+}
+/*  bueno en el body dividi las sectiones en 2 una de 15 % yb la otra de 85%  con tres filas  */
+body{
+  display: grid;
+  grid-template-columns: 15%; /* Define dos columnas: una del 15% y otra del 85% del ancho */
+  grid-template-rows: 10% 10% 30%; /* Define dos filas: la primera del 90% y la segunda del 10% de la altura */
+  height: 100vh; /* El contenedor ocupa el 100% de la altura de la ventana */
+  width: 1440px; /* El contenedor ocupa el 100% del ancho de la ventana */
+  height: 710px; /* Ocupa el 100% de la altura de la ventana */
+  background-color: #cccccc;
+}
+/* 1section */ 
+.despligue__form{
+
+  grid-column: 1 / 1;
+  grid-row: 1 / 5;
+  background-color: #282C34;
+  
+}
+/* estilos en despligue */
+
+
+.texto__principal, .despligue__ul{
+  font-family: 'Inter', sans-serif;
+  color: #ffff;
+  padding-top:17px;
+  padding-bottom: 17px;
+  display: grid;
+  gap: 17px;
+  text-align: center;
+ 
+
+}
+.texto__principal{
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffff;
+  
+}
+
+
+
+
+
+
+/* 2 section */ 
+/*  enlaces  */
+.enlace{
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  height: 40px; /* Ajusta la altura al */
+  width: 1290px; /* Ajusta el ancho al */
+  position: relative;
+  left: 4px;  
+  border-radius: 8px;
+  background-color: #ffff;
+  display: flex;
+  justify-content: space-between;
+}
+/* nuestra imagen gema */
+.imagen__gema-menu{
+ width:105px;
+ height: 55px;
+ position: relative;
+ left: 15px;
+
+}
+ /*  los enlace   de iconos */
+
+.derecha{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  position: relative;
+  right: 25px;
+  text-align: center;
+  margin: auto 0;
+}
+
+/* iconos  */
+
+.iconos{
+  position: relative;
+  bottom: 1px;
+  right: 13px;
+  
+  
+}
+
+/* imagen principa; */
+
+.imagen__principal{
+
+  width: 45px;
+  height: 45px;
+  position: relative;
+  left:87px ;
+  top: 15px;
+  border-radius: 50%;
+}
+
+/* el texto de nombre de usuario */
+
+.texto__usuario{
+font-family: 'Inter', sans-serif;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color:  #282C34;
+}
+
+/* tercera sencion  */
+
+/* tercera sesion ancho y largo  */
+.imput__section{
+  height: 194px; /* Ajusta la altura al */
+  width: 1290px; /* Ajusta el ancho al */
+  position: relative;
+  left: 4px; 
+  bottom: 22px; 
+  border-radius: 8px;
+  background-color: #ffff;
+ 
+}
+
+
+/* stylos de label y input */
+
+
+/* padre */
+
+.label__input {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  width: 1178px;
+  height:155px ;  
+  padding: 5px;
+  position: relative;
+  left: 70px;
+}
+
+.label__input label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 5px;
+  position: relative;
+
+}
+
+span {
+  font-weight: bold;
+  position: relative;
+  left: 25px;
+  top: 5px;
+}
+
+/* direnrtamente al los inpus */
+.Nombre {
+  width: 200px;
+  height: 36px;
+  border-radius: 0.5rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #282C3440
+
+}
+
+/* Sección del botón */
+.boton__principal {
+  width: 83px;
+  height: 31px;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  background-color:  #1A65A4;
+  position: relative;
+  top: 25px; 
+
+}
+/* texto de el boton */
+.buscar__texto{
+font-family: 'Inter', sans-serif;
+font-size: 12px;
+line-height: 14px;
+color: #ffff;
+
+}
+
+/* tercera sesion  */
+
+
+/* el padre  de todo */
+.input__iconos{
+display: flex;
+justify-content: space-between;
+
+}
+/* solo los inpus radios */
+
+.input__radio{
+  display: flex;
+  gap:50px ;
+  position: relative;
+  top: 13px;
+  left: 20px;
+}
+
+
+.parafo-activo{
+position: relative;
+right:130px;
+top: 15px;
+color: #1A65A4;
+}
+
+.iconos__svg{
+display:  flex;
+gap: 15px;
+position: relative;
+top: 15px;
+right: 20px;
+
+}
+/* iconos de los cuatro cudros */
+
+.flecha1{
+color: #1A65A4;
+
+}
+
+
+
+
+/* section 4 */
+.contenedor{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+
+
+}
+
+
+.contenido {
+  width: 186px;
+  height: 236px;
+  max-width: 200px;
+  min-width:180px;
+  border-radius: 8px;
+  background-color: #ffff;
+  position: relative;
+  top: 110px;
+  left: 5px;
+  padding: 8px;
+  display: grid;
+  gap:12px ;
+  
+}
+/* monitor  vital img */
+.Monitor__vital{
+  width:124px;
+  height:115px;
+  position: relative;
+  left: 25px;
+  top: 9px;
+}
+/* letra de monitor vital */
+.monitor-vital{
+font-family: 'Inter', sans-serif;
+font-weight: 600;
+line-height: 14px;
+font-size: 12px;
+}
+
+.sn{
+font-family: 'Inter', sans-serif;
+font-size: 12px;
+line-height: 12px;
+font-weight: 600;
+padding: 5px;
+
+}
+.act{
+font-family: 'Inter', sans-serif;
+font-size: 12px;
+line-height: 12px;
+font-weight: 400;
+padding: 5px;
+}
+
+.monitor-vital__boton{
+  font-family: 'Inter', sans-serif;
+  width: 61px;
+  height: 33px;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  background-color: #1A65A4;
+  color:aliceblue;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  font-size: 12px;
+
+}
+
+
+
+
+
+
